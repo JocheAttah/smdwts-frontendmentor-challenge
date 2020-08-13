@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; // 1 rem = 10px;    
+    box-sizing: border-box;
+}
+
+.App{
+    color: $color-dark-text-colored;
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    width: 100vw;
+    height: 100vh;
+    background-image: $background-color;
+    background-size: cover;
+}
+.container{
+    max-width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

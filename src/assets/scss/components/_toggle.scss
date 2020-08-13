@@ -1,0 +1,41 @@
+.toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__input{
+        display: none;
+    }
+
+    &__switch{
+        cursor: pointer;
+        align-self: flex-start;
+    }
+
+    &__slider{
+        width: 5.5rem;
+        height: 3rem;
+        background-image: $color-dark-toggle;
+        // background-color: red;
+        border-radius: 10rem;
+        margin-left: 1rem;
+        display: inline-flex;  
+
+        &::after{
+            content: "";
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            background-color: $color-dark-bg-bottom;
+            margin-top: 2.5px;
+            margin-left: 3px;
+            transition: all .5  s;
+        }
+    }
+
+
+    &__input:checked ~ &__switch &__slider::after{
+        transform: translateX(2.5rem);
+
+    }
+}
