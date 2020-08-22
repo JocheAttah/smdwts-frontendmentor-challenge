@@ -1,4 +1,5 @@
 import React from "react";
+import Toggle from "./components/Toggle";
 
 function App() {
   return (
@@ -9,16 +10,8 @@ function App() {
             <div class="header__title--main">Social Media Dashboard</div>
             <div class="header__title--submain">Total Followers: 23,004</div>
           </div>
-          {/* <div class="toggle"> 
-            <span>Dark Mode</span>
-            <span>
-                <input type="checkbox" id="toggleSwitch" class="toggle__input">
-                  <label class="toggle__switch" for="toggleSwitch">
-                    <span class="toggle__slider"> </span>
-                  </label>
-                </input>
-            </span>
-      </div>      */}
+           
+           <Toggle />
         </header>
       </div>
     </div>
