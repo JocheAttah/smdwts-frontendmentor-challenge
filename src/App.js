@@ -1,5 +1,6 @@
 import React from "react";
 import Toggle from "./components/Toggle";
+import Socials from "./components/Socials";
 
 function App() {
   return (
@@ -10,9 +11,16 @@ function App() {
             <div class="header__title--main">Social Media Dashboard</div>
             <div class="header__title--submain">Total Followers: 23,004</div>
           </div>
-           
-           <Toggle />
+
+          <Toggle />
         </header>
+
+        <div className="App__socials">
+          <Socials />
+          <Socials />
+          <Socials />
+          <Socials />
+        </div>
       </div>
     </div>
   );
