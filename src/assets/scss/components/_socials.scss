@@ -1,10 +1,14 @@
 .socials {
     display: flex;
+    width: 24%;
+    text-align: center;
+    
 
     &__box {
-        width: 53rem;
-        text-align: center;
-
+        width:100%;
         background-color: $color-dark-card-bg;
+        
+        
+
     }
 }
